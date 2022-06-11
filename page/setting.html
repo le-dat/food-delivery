@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/setting.css" />
+</head>
+
+<body>
+    <div class="home">
+        <header class="header">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-5 m-5 c-4">
+                        <div class="header__left">
+                            <div class="login__header">
+                                <a href="/" class="a login__header-link">
+                                    <h1>Food</h1>
+                                    <p>delivery</p>
+                                </a>
+                            </div>
+                            <div class="header__search">
+                                <form action="/" class="header__form">
+                                    <input type="text" class="header__input" placeholder="Search" />
+                                    <span class="material-icons icon__search"> search </span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-7 m-7 c-8">
+                        <div class="header__right">
+                            <div class="header__navbar">
+                                <div class="header__navItem">Restaurants</div>
+                                <div class="header__navItem">Deals</div>
+                                <div class="header__navItem">My orders</div>
+                                <div class="header__navNotify">
+                                    <span class="material-icons icon__notify"> inbox </span>
+                                    <div class="header__notifyNum">3</div>
+                                    <div class="header__notify">
+                                        <div class="header__notifyContent">something...</div>
+                                    </div>
+                                </div>
+                                <div class="header__navAccount">
+                                    <a href="../page/setting.html" class="header__navLink"></a>
+                                    <img src="../assets/img/user-account.jpg" alt="user" class="header__imgAccount" />
+                                </div>
+                                <div class="header__navMenu">
+                                    <span class="material-icons">
+                                        menu
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+        <!-- setting account -->
+        <div class="container">
+            <div class="grid wide">
+                <div class="setting row">
+                    <div class="col l-4 m-4 c-12">
+                        <div class="setting__left">
+                            <div class="setting__title">Settings</div>
+                            <div class="setting__list">
+                                <div class="setting__item">
+                                    <div class="setting__itemLeft">
+                                        <span class="material-icons icon__user">
+                                            person_outline
+                                        </span>
+                                    </div>
+                                    <div class="setting__itemRight">
+                                        <div class="setting__itemHeader">Account</div>
+                                        <div class="setting__itemDes">Personal information</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-8 m-8 c-12">
+                        <div class="setting__right">
+                            <div class="setting__title">Account</div>
+                            <div class="setting__info">
+                                <div class="setting__infoTitle">Personal information</div>
+                                <form class="form__setting" id="form__setting" action="/page/home.html" method="post">
+                                    <div class="setting__avatar">
+                                        <div class="avatar__group">
+                                            <div class="setting__avatarTitle">Avatar</div>
+                                            <div class="setting__avatarImgCover">
+                                                <img src="../assets/img/user-account.jpg" alt="avatar img"
+                                                    class="setting__avatarImg">
+                                            </div>
+                                        </div>
+                                        <input type="file" name="file" class="input__file" id="input__file">
+                                        <button class="setting__btn btn__change">Change</button>
+                                        <button class="setting__btn btn__remove">Remove</button>
+                                    </div>
+
+                                    <div class="form__group ">
+                                        <label for="info__firstName" class="form__label">First name</label>
+                                        <input type="text" id="info__firstName" name="info__firstName"
+                                            class="form__input" placeholder="Jane">
+                                        <span class="form__message"></span>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <label for="info__lastName" class="form__label">Last name</label>
+                                        <input type="text" id="info__lastName" name="info__lastName" class="form__input"
+                                            placeholder="Robertson">
+                                        <span class="form__message"></span>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <label for="info__email" class="form__label">Email</label>
+                                        <input type="text" id="info__email" name="info__email" class="form__input"
+                                            placeholder="jane.robertson@example.com">
+                                        <span class="form__message"></span>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <label for="info__phone" class="form__label">Phone number</label>
+                                        <input type="number" id="info__phone" name="info__phone" class="form__input"
+                                            placeholder="(217) 555-0113">
+                                        <span class="form__message"></span>
+                                    </div>
+
+                                    <div class="setting__emailTitle">Email notifications</div>
+                                    <div class="checkbox__group">
+                                        <input type="checkbox" id="newDetail" name="newDetail" class="notify__checkbox"
+                                            checked>
+                                        <label for="newDetail" class="info__label">New deals</label>
+                                    </div>
+
+                                    <div class="checkbox__group">
+                                        <input type="checkbox" id="passwordChange" name="passwordChange"
+                                            class="notify__checkbox" checked>
+                                        <label for="passwordChange" class="info__label">Password changes</label>
+                                    </div>
+
+                                    <div class="checkbox__group">
+                                        <input type="checkbox" id="newRestaurant" name="newRestaurant"
+                                            class="notify__checkbox" checked>
+                                        <label for="newRestaurant" class="info__label">New restaurants</label>
+                                    </div>
+
+                                    <div class="checkbox__group">
+                                        <input type="checkbox" id="specialOffers" name="specialOffers"
+                                            class="notify__checkbox" checked>
+                                        <label for="specialOffers" class="info__label">Special offers</label>
+                                    </div>
+
+                                    <div class="checkbox__group">
+                                        <input type="checkbox" id="orderStatuses" name="orderStatuses"
+                                            class="notify__checkbox" checked>
+                                        <label for="orderStatuses" class="info__label">Order statuses</label>
+                                    </div>
+
+                                    <div class="checkbox__group">
+                                        <input type="checkbox" id="newsLetter" name="newsLetter"
+                                            class="notify__checkbox" checked>
+                                        <label for="newsLetter" class="info__label">Newsletter</label>
+                                    </div>
+
+                                    <div class="setting__footer">
+                                        <div class="footer__left">
+                                            <button type="submit" class="setting__btn btn__logout">Log
+                                                out</button>
+                                        </div>
+                                        <div class="footer__right">
+                                            <button class="setting__btn btn__discard">Discard
+                                                changes</button>
+                                            <button type="submit" class="setting__btn btn__save">Save changes</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="../assets/js/validator.js"></script>
+<script>
+    Validator({
+        form: '#form__setting',
+        formGroup: '.form__group',
+        errorSelector: '.form__message',
+        rules: [
+            isRequire('#info__firstName'),
+            isRequire('#info__lastName'),
+            isRequire('#info__email'),
+            isEmail('#info__email'),
+            isRequire('#info__phone'),
+            isMinLength('#info__phone', 10),
+        ]
+    })
+</script>
+
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Google icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/login.css" />
+</head>
+
+<body>
+  <div class="App">
+    <div class="login">
+      <div class="grid">
+        <div class="row">
+          <div class="col l-5 m-12 c-12">
+            <div class="login-left">
+              <div class="login__header">
+                <a href="/" class="a login__header-link">
+                  <h1>Food</h1>
+                  <p>delivery</p>
+                </a>
+              </div>
+              <div class="login__container">
+                <h1 class="login__container-title">Login</h1>
+                <div class="login__container-subtitle">
+                  Sign in with your data that you entered during your
+                  registration.
+                </div>
+
+                <form action="./page/home.html" method="get" class="form__login" id="form__login">
+                  <!-- email -->
+                  <div class="form__group">
+                    <label for="email" class="form__label"> Email </label>
+                    <input id="email" name="email" type="text" class="form__input" placeholder="name@example.com" />
+                    <span class="form__message"></span>
+                  </div>
+                  <!-- password -->
+                  <div class="form__group">
+                    <label for="password" class="form__label">
+                      Password
+                    </label>
+                    <input id="password" name="password" type="password" class="form__input"
+                      placeholder="min. 8 characters" />
+                    <span class="form__message"></span>
+                  </div>
+
+                  <!-- checkbox login -->
+                  <div class="form__checkbox">
+                    <input id="checkbox__login" name="checkbox__login" type="checkbox" class="input" />
+                    <label for="checkbox__login" class="checkbox__title">
+                      Keep me logged in
+                    </label>
+                  </div>
+
+                  <button type="submit" class="btn btn__login">Login</button>
+                </form>
+                <a href="/" class="login__textForgot">Forgot password</a>
+              </div>
+
+              <div class="login__footer">
+                <span class="footer__text">Don’t have an account?</span>
+                <a href="/" class="footer__signup">Sign up</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- right -->
+          <div class="col l-7 m-12 c-0">
+            <div class="login-right">
+              <div class="login__advertise">
+                <div class="login__advertise-one">
+                  <div class="advertiseOne__header">
+                    <div class="advertiseOne__header-left">
+                      <h1 class="advertiseOne__header-title">
+                        Overall rating
+                      </h1>
+                      <div class="advertiseOne__header-review">
+                        <div class="advertiseOne__header-number">4.2</div>
+                        <div class="advertiseOne__header-starts">
+                          <div class="advertiseOne__header-start">
+                            <span class="material-icons icon__start-full">
+                              grade
+                            </span>
+                          </div>
+                          <div class="advertiseOne__header-start">
+                            <span class="material-icons icon__start-full">
+                              grade
+                            </span>
+                          </div>
+                          <div class="advertiseOne__header-start">
+                            <span class="material-icons icon__start-full">
+                              grade
+                            </span>
+                          </div>
+                          <div class="advertiseOne__header-start">
+                            <span class="material-icons icon__start-full">
+                              grade
+                            </span>
+                          </div>
+                          <div class="advertiseOne__header-start">
+                            <span class="material-icons icon__start">
+                              grade
+                            </span>
+                          </div>
+                        </div>
+                        <div class="advertiseOne__header-titleVote">
+                          3 votes
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btn advertiseOne__header-btn">
+                      Leave review
+                    </div>
+                  </div>
+                  <div class="advertiseOne__container">
+                    <div class="btn advertiseOne__dropDown">
+                      Sort by:
+                      <span class="dropDown__textBold">Newest first</span>
+                      <span class="material-icons icon__dropDown">
+                        keyboard_arrow_down
+                      </span>
+                      <div class="dropDown__list">
+                        <div class="dropDown__item">test</div>
+                      </div>
+                    </div>
+                    <!-- comment 1 -->
+                    <div class="advertiseOne__comment">
+                      <div class="comment-left">
+                        <img src="./assets/img/user1.jpg" alt="" class="comment__img" />
+                      </div>
+                      <div class="comment-right">
+                        <div class="comment__name">Savannah Miles</div>
+                        <div class="comment__review">
+                          <div class="advertiseOne__header-starts">
+                            <div class="advertiseOne__header-start">
+                              <span class="material-icons icon__start-full">
+                                grade
+                              </span>
+                            </div>
+                            <div class="advertiseOne__header-start">
+                              <span class="material-icons icon__start-full">
+                                grade
+                              </span>
+                            </div>
+                            <div class="advertiseOne__header-start">
+                              <span class="material-icons icon__start-full">
+                                grade
+                              </span>
+                            </div>
+                            <div class="advertiseOne__header-start">
+                              <span class="material-icons icon__start-full">
+                                grade
+                              </span>
+                            </div>
+                            <div class="advertiseOne__header-start">
+                              <span class="material-icons icon__start">
+                                grade
+                              </span>
+                            </div>
+                          </div>
+                          <div class="advertiseOne__header-titleVote">
+                            10 days ago
+                          </div>
+                        </div>
+                        <div class="comment__des">
+                          Lorem ipsum dolor sit amet, adhuc nulla definiebas
+                          mei ad, ei doming aperiam delicata est.
+                        </div>
+                        <div class="comment__react">
+                          <span class="material-icons icon__like">
+                            thumb_up
+                          </span>
+                          <div class="comment__amount">14</div>
+                          <span class="material-icons icon__dislike">
+                            thumb_down_off_alt
+                          </span>
+                          <div class="comment__amount">4</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- comment 2 -->
+                    <div class="advertiseOne__comment">
+                      <div class="comment-left">
+                        <img src="./assets/img/user2.jpg" alt="" class="comment__img" />
+                      </div>
+                      <div class="comment-right">
+                        <div class="comment__name">Jacob Jones</div>
+                        <div class="comment__review">
+                          <div class="advertiseOne__header-starts">
+                            <div class="advertiseOne__header-start">
+                              <span class="material-icons icon__start-full">
+                                grade
+                              </span>
+                            </div>
+                            <div class="advertiseOne__header-start">
+                              <span class="material-icons icon__start-full">
+                                grade
+                              </span>
+                            </div>
+                            <div class="advertiseOne__header-start">
+                              <span class="material-icons icon__start-full">
+                                grade
+                              </span>
+                            </div>
+                            <div class="advertiseOne__header-start">
+                              <span class="material-icons icon__start-full">
+                                grade
+                              </span>
+                            </div>
+                            <div class="advertiseOne__header-start">
+                              <span class="material-icons icon__start">
+                                grade
+                              </span>
+                            </div>
+                          </div>
+                          <div class="advertiseOne__header-titleVote">
+                            1 days ago
+                          </div>
+                        </div>
+                        <div class="comment__des">
+                          Lorem ipsum dolor sit amet, adhuc nulla definiebas
+                          mei ad, ei doming aperiam delicata est.
+                        </div>
+                        <div class="comment__react">
+                          <span class="material-icons icon__like">
+                            thumb_up
+                          </span>
+                          <div class="comment__amount">14</div>
+                          <span class="material-icons icon__dislike">
+                            thumb_down_off_alt
+                          </span>
+                          <div class="comment__amount">4</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="login__advertise-two">
+                  <div class="advertisedTwo__header">
+                    <img src="./assets/img/ad2.jpg" alt="" class="advertisedTwo__img" />
+                  </div>
+                  <div class="advertisedTwo__container">
+                    <div class="advertisedTwo__title">Roll set</div>
+                    <div class="advertisedTwo__des">
+                      Ea his sensibus eleifend, mollis iudicabit omittantur id
+                      mel. Et cum ignota euismod corpora, et saepe.
+                    </div>
+                    <div class="advertisedTwo__footer">
+                      <div class="advertisedTwo__price">
+                        <span class="material-icons icon__money">
+                          attach_money
+                        </span>
+                        <div class="advertisedTwo__number">22.56</div>
+                      </div>
+                      <div class="advertisedTwo__iconAdd">
+                        <span class="material-icons icon__add"> add </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="login__advertise-three">
+                  <div class="advertiseThree__wrap">
+                    <div class="advertiseThree__left">
+                      <img src="./assets//img/ad1.jpg" alt="" class="img advertiseThree__img" />
+                    </div>
+                    <div class="advertiseThree__right">
+                      <hq class="advertiseThree__header">Nigiri set</hq>
+                      <div class="advertiseThree__container">
+                        <p class="advertiseThree__des">
+                          Ea his sensibus eleifend, mollis iudicabit
+                          omittantur id mel. Et cum ignota euismod corpora, et
+                          saepe.
+                        </p>
+                        <div class="advertiseThree__amountBlock">
+                          <span class="material-icons icon__minus--square">
+                            remove
+                          </span>
+                          <div class="advertiseThree__amount">3</div>
+                          <span class="material-icons icon__add--square">
+                            add
+                          </span>
+                        </div>
+                      </div>
+                      <div class="advertiseThree__footer">
+                        <div class="advertiseThree__price">
+                          <span class="material-icons icon__money">
+                            attach_money
+                          </span>
+                          <div class="advertiseThree__number">16.80</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="login__review">
+                <div class="login__review-title">
+                  Leave reviews for all meals
+                </div>
+                <div class="login__review-subtitle">
+                  Lorem ipsum dolor sit amet, magna scaevola his ei. Cum te
+                  paulo probatus molestiae, eirmod assentior eum ne, et omnis
+                  antiopam mel.
+                </div>
+                <div class="dots">
+                  <span class="material-icons icon__dot">
+                    fiber_manual_record
+                  </span>
+                  <span class="material-icons icon__dot--full">
+                    fiber_manual_record
+                  </span>
+                  <span class="material-icons icon__dot">
+                    fiber_manual_record
+                  </span>
+                  <span class="material-icons icon__dot">
+                    fiber_manual_record
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../assets/js/validator.js"></script>
+<script>
+  Validator({
+    form: '#form__login',
+    formGroup: '.form__group',
+    errorSelector: '.form__message',
+    rules: [
+      isRequire('#email'),
+      isEmail('#email'),
+      isRequire('#password'),
+      isMinLength('#password', 8),
+      // isConfirmPassword('#password', document.querySelector('#password').value, 'Password not match ')
+    ]
+  })
+</script>
+
+</html>

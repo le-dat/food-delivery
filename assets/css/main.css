@@ -1,0 +1,72 @@
+@import "./grid.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  scroll-behavior: smooth;
+}
+:root {
+  --color-white: #ffffff;
+  --color-black: #2b2b43;
+  --color-primary: #4e60ff;
+  --color-primary-hover: #697bff;
+  --color-secondary: #fd6d22;
+  --color-error: #ff5c60;
+  --color-secondary-light: #fff3ed;
+  --color-light: #f3f4ff;
+  --color-lightest: #f8f9ff;
+  --color-gray: #83859c;
+  --color-gray-dark: #545563;
+  --color-gray-light: #c7c8d2;
+  --color-gray-lightest: #edeef2;
+  --color-bright: #e5e5e5;
+
+  --height-header: 7.5rem;
+}
+a,
+div {
+  user-select: none; /* Standard syntax */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+button {
+  outline: none;
+  content: none;
+  border: none;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+input[type="checkbox"],
+input[type="file"],
+input[type="text"] {
+  outline: none;
+  content: none;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+input[type="text"]::placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="text"]::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-gray);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+}
