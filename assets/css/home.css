@@ -418,10 +418,10 @@
     padding: 0 1.8rem;
   }
   .login__header h1 {
-    font-size: 26px;
+    font-size: 22px;
   }
   .login__header p {
-    font-size: 24px;
+    font-size: 20px;
   }
   .header__form {
     display: none;
@@ -465,8 +465,8 @@
     justify-content: center;
     border-radius: 10px;
     background-color: var(--color-light);
-    width: 35px;
-    height: 35px;
+    width: 48px;
+    height: 48px;
     margin-right: 20px;
     cursor: pointer;
     position: relative;
@@ -495,6 +495,7 @@
   }
   .slide__des {
     font-size: 40px;
+    margin: 10px 0 5px;
   }
   .slide__more {
     margin-top: 10px;
