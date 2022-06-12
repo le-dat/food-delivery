@@ -1,8 +1,5 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
-
 function Validator({ form, formGroup, errorSelector, rules }) {
-  const formElement = $(form);
+  const formElement = document.querySelector(form);
 
   let arraySelector = {};
 

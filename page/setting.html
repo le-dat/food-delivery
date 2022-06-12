@@ -76,15 +76,52 @@
                         <div class="setting__left">
                             <div class="setting__title">Settings</div>
                             <div class="setting__list">
-                                <div class="setting__item">
+                                <div class="setting__item active">
                                     <div class="setting__itemLeft">
-                                        <span class="material-icons icon__user">
+                                        <span class="material-icons icon__setting">
                                             person_outline
                                         </span>
                                     </div>
                                     <div class="setting__itemRight">
                                         <div class="setting__itemHeader">Account</div>
                                         <div class="setting__itemDes">Personal information</div>
+                                    </div>
+                                </div>
+
+                                <div class="setting__item">
+                                    <div class="setting__itemLeft">
+                                        <span class="material-icons icon__setting">
+                                            location_on
+                                        </span>
+
+                                    </div>
+                                    <div class="setting__itemRight">
+                                        <div class="setting__itemHeader">Address</div>
+                                        <div class="setting__itemDes">Shippings addresses</div>
+                                    </div>
+                                </div>
+
+                                <div class="setting__item">
+                                    <div class="setting__itemLeft">
+                                        <span class="material-icons icon__setting">
+                                            credit_card
+                                        </span>
+                                    </div>
+                                    <div class="setting__itemRight">
+                                        <div class="setting__itemHeader">Payment method</div>
+                                        <div class="setting__itemDes">Connected credit cards</div>
+                                    </div>
+                                </div>
+
+                                <div class="setting__item">
+                                    <div class="setting__itemLeft">
+                                        <span class="material-icons icon__setting">
+                                            shield
+                                        </span>
+                                    </div>
+                                    <div class="setting__itemRight">
+                                        <div class="setting__itemHeader">Security</div>
+                                        <div class="setting__itemDes">Password, 2FA</div>
                                     </div>
                                 </div>
                             </div>
@@ -196,6 +233,7 @@
     </div>
     </div>
 </body>
+<script src="../assets/js/setting.js"></script>
 <script src="../assets/js/validator.js"></script>
 <script>
     Validator({
@@ -211,6 +249,7 @@
             isMinLength('#info__phone', 10),
         ]
     })
+
 </script>
 
 </html>

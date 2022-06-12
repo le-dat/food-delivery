@@ -85,10 +85,12 @@ const renderFootList = () => {
     return `
         <div class="col l-2 m-3 c-4">
             <div class="nav__item">
-              <div class="nav__itemImgCover">
-              <img src="../assets/img/food${item.img}.jpg" alt="food${item.img} img" class="nav__itemImg">
-              </div>
-              <p class="nav__des">${item.name}</p>
+                <a href="" class="nav__link">
+                  <div class="nav__itemImgCover">
+                  <img src="../assets/img/food${item.img}.jpg" alt="food${item.img} img" class="nav__itemImg">
+                  </div>
+                  <p class="nav__des">${item.name}</p>
+                </a>
             </div>
         </div>
         `;
@@ -102,6 +104,7 @@ const renderRestaurant = () => {
     return `
     <div class="col l-4 m-4 c-12">
     <div class="restaurant__item">
+    <a href="#" class="restaurant__link">
       <div class="restaurant__imgCover">
         <img src="../assets/img/restaurant${item.img}.jpg" alt="restaurant${
       item.img
@@ -157,6 +160,7 @@ const renderRestaurant = () => {
         })}
         </div>
       </div>
+      </a>
     </div>
   </div>
         `;
@@ -164,5 +168,3 @@ const renderRestaurant = () => {
   resList.innerHTML = html.join("");
 };
 renderRestaurant();
-
-const container = $(".container");
