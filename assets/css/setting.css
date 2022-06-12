@@ -382,6 +382,9 @@
 }
 .notify__checkbox {
   margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  filter: hue-rotate(35deg);
 }
 .setting__footer {
   width: 100%;
@@ -501,11 +504,6 @@
     font-size: 14px;
     font-weight: 400;
     color: var(--color-dark);
-  }
-  .notify__checkbox {
-    width: 20px;
-    height: 20px;
-    filter: hue-rotate(40deg);
   }
   .setting__footer {
     display: block;
