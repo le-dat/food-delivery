@@ -356,7 +356,7 @@
 .advertisedTwo__price {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 800;
   letter-spacing: 0.1px;
 }
@@ -435,7 +435,7 @@
 .advertiseThree__price {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 800;
   color: var(--color-black);
   letter-spacing: 0.1px;
