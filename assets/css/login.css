@@ -527,11 +527,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    position: fixed;
-    bottom: 4rem;
-    left: 0;
-    right: 0;
+    margin-top: 1.5rem;
   }
   .footer__text {
     color: var(--color-gray-dark);
